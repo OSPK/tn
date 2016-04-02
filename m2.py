@@ -46,24 +46,11 @@ def show_category_page(categoryname):
 @application.route('/<category>/<date>/<int:news_id>/')
 @cache.cached(timeout=1200000)
 def show_news(category,date,news_id):
-	nid = str(news_id)
-	mid = None
-	exists = False
-
 	url = ('http://dailypakistan.com.pk/mobile_api/news_detail/news_id/%d/format/json/news_image_size/medium' % news_id)
 	response = requests.get(url)
 	news = response.json()
-
-	if "news_title" in news:
-		#col.insert(news)
-		status = "api"
-		titl = news.get('news_title')
-
-	else:
-		status = news['result']
-		titl = "None"
 		
-	return render_template('news.html', news=news, category=category, status=status, mid=mid)
+	return render_template('news.html', news=news, category=category)
 
 @application.route('/<category>/<date>/<int:news_id>/update')
 def update_news(category,date,news_id):
