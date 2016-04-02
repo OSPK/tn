@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ur">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% block title %}{% endblock %}
+
+		<link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}"/>
+		<link href="{{ url_for('static', filename='css/reset.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="menu-container">
+			<img width="200" class="clearfix" src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Home">
+			<ul class="menu">
+				<li><a href="/categories">موضوعات</a></li>
+				<li><a class="home" href="/">تازہ ترین</a></li>
+			</ul>
+			&nbsp;
+		</div>
+		{% block content %}{% endblock %}
+		<footer>
+			<img alt="Free Basics" width="200" src="{{ url_for('static', filename='images/freebasics.png') }}">
+			<a style="color:white;" href="http://dailypakistan.com.pk"><p>In Partnership with Daily Pakistan</p></a>
+		</footer>
+	</body>
+</html>

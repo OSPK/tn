@@ -1,0 +1,239 @@
+/*local('Jameel Noori Nastaleeq'),*/
+@font-face {
+	font-family: 'Urdu';
+	src:url('../fonts/nafees-nastaleeq-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/nafees-nastaleeq-webfont.woff') format('woff'),
+	url('../fonts/nafees-nastaleeq-webfont.ttf') format('truetype'),
+	url('../fonts/nafees-nastaleeq-webfont.svg#NafeesRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	line-height: 2;
+}
+html {
+  font-size: 12px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Urdu;
+	direction: rtl;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	font-size: 200%;
+	line-height: 300%;
+	margin:0.5em 0;
+}
+.headline {
+	margin-bottom: -10px;
+}
+.clearfix {
+	overflow: auto;
+  	zoom: 1;
+	clear:both;
+}
+.container {
+	width:90%;
+	margin:0px auto;
+	margin-top:2em;
+}
+.img-container {
+	width:100%;
+}
+.content {
+	font-size:150%;
+	margin-top:2em;
+	line-height: 300%;
+}
+.content a {
+	/* margin: 0em 0.4em; */
+	background: #EDEDED;
+	color: #2E51AE;
+	padding: 0em 0.9em;
+	font-size: 80%;
+	border-radius: 2px;
+	display: block;
+}
+article.story {
+  padding: 1.2em 2em 2.4em 2em;
+  border-bottom: 1px dotted #BEBEBE;
+}
+article.story:nth-child(even) {
+	background-color: #efefef;
+}
+article.story:last-child {
+	border-bottom: 0px dotted #fff;
+}
+
+.menu-container {
+	background: #017e52;
+	text-align: center;
+	padding: 3em 3em 0em 3em;
+}
+.menu-container img {
+	margin-bottom:20px;
+}
+.menu {
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+}
+.menu li {
+	float:left;
+	width:50%;
+}
+.menu li a {
+	font-size: 1.5em;
+	background-color: #08A26C;
+	color: #efefef;
+	border-bottom: 3px solid #38C191;
+	border-right: 1px solid #38C191;
+	border-left: 1px solid #38C191;
+	border-radius: 5px;
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 0.7em;
+	display: inline-block;
+}
+.menu li a:hover, .menu li a:focus {
+	background-color: #ccc;
+	color:#444;
+	font-weight: bold;
+	border-bottom: 3px solid #526D80;
+	border-right: 1px solid #526D80;
+	border-left: 1px solid #526D80;
+}
+.category {
+	margin: 1em 0em;
+	padding: 1em 1em;
+	padding-top:1.5em;
+	width:9em;
+	text-align: center;
+	background-color: #ccc;
+}
+.cats a {
+  color: #FFF;
+  width: 100%;
+  display: inline-block;
+  padding-right: 20px;
+}
+.cats:hover, .cats a:hover, .cats:focus, .cats a:focus {
+	background-color: #bbb;
+	color:#222;
+}
+.قومی, .national {
+	background-color: #016F3A;
+	color:white;
+}
+.ڈیلی_بائیٹس, .daily-bites {
+	background-color: #DB3030;
+	color:white;
+}
+.کھیل, .sports {
+	background-color: #D78C17;
+	color:white;
+}
+.بین_الاقوامی, .international {
+	background-color: #B5380A;
+	color:white;
+}
+.تفریح, .entertainment {
+	background-color: #4197CB;
+	color:white;	
+}
+.سائنس_اور_ٹیکنالوجی, .science-and-technology {
+	background-color: #014F90;
+	color:white;
+}
+.کالم, .columns {
+	background-color: #222222;
+	color:white;
+}
+.تعلیم_و_صحت, .education-and-health {
+	background-color: #32B55B;
+	color:white;
+}
+.date {
+	text-align: right;
+	margin:0.5em 0;
+}
+
+.thumb {
+/*	float: right;
+	margin-left: 20px;
+	margin-top: 10px;*/
+	border-radius: 5%;
+}
+.dot {
+	font-size: 5px;
+}
+.db {
+	color: green!important;
+}
+.api {
+	color: blue!important;
+}
+
+footer {
+	margin-top: 3em;
+	text-align: center;
+	padding:30px;
+	color: #efefef;
+	background: #6b20a2;
+}
+footer p {
+  margin: 10px;
+  font-family: sans-serif;
+}
+
+/* All Bigger screens */
+@media only screen and (min-width : 992px) {
+	.content {
+		width: 70%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	html {
+  		font-size: 10px;
+	}
+	.content {
+	  font-size: 200%;
+	  margin-top: 2em;
+	  line-height: 190%;
+	}
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    html {
+  		font-size: 10px;
+	}
+	h1 {
+		font-size: 250%;
+		line-height: 250%;
+	}
+}
